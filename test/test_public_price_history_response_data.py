@@ -16,52 +16,23 @@ from __future__ import absolute_import
 import unittest
 
 import swagger_client
-from swagger_client.api.public_api import PublicApi  # noqa: E501
+from swagger_client.models.public_price_history_response_data import PublicPriceHistoryResponseData  # noqa: E501
 from swagger_client.rest import ApiException
 
 
-class TestPublicApi(unittest.TestCase):
-    """PublicApi unit test stubs"""
+class TestPublicPriceHistoryResponseData(unittest.TestCase):
+    """PublicPriceHistoryResponseData unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.public_api.PublicApi()  # noqa: E501
+        pass
 
     def tearDown(self):
         pass
 
-    def test_v1_public_current_symbol_get(self):
-        """Test case for v1_public_current_symbol_get
-
-        Current  # noqa: E501
-        """
-        pass
-
-    def test_v1_public_price_change_symbol_get(self):
-        """Test case for v1_public_price_change_symbol_get
-
-        Price Change  # noqa: E501
-        """
-        pass
-
-    def test_v1_public_price_history_symbol_period_interval_get(self):
-        """Test case for v1_public_price_history_symbol_period_interval_get
-
-        Price History  # noqa: E501
-        """
-        pass
-
-    def test_v1_public_symbols_get(self):
-        """Test case for v1_public_symbols_get
-
-        Symbols  # noqa: E501
-        """
-        pass
-
-    def test_v1_public_trend_symbol_get(self):
-        """Test case for v1_public_trend_symbol_get
-
-        Trend  # noqa: E501
-        """
+    def testPublicPriceHistoryResponseData(self):
+        """Test PublicPriceHistoryResponseData"""
+        # FIXME: construct object with mandatory attributes with example values
+        # model = swagger_client.models.public_price_history_response_data.PublicPriceHistoryResponseData()  # noqa: E501
         pass
 
 
