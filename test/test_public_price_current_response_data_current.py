@@ -16,12 +16,12 @@ from __future__ import absolute_import
 import unittest
 
 import swagger_client
-from swagger_client.models.public_current_response_data import PublicCurrentResponseData  # noqa: E501
+from swagger_client.models.public_price_current_response_data_current import PublicPriceCurrentResponseDataCurrent  # noqa: E501
 from swagger_client.rest import ApiException
 
 
-class TestPublicCurrentResponseData(unittest.TestCase):
-    """PublicCurrentResponseData unit test stubs"""
+class TestPublicPriceCurrentResponseDataCurrent(unittest.TestCase):
+    """PublicPriceCurrentResponseDataCurrent unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,10 +29,10 @@ class TestPublicCurrentResponseData(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testPublicCurrentResponseData(self):
-        """Test PublicCurrentResponseData"""
+    def testPublicPriceCurrentResponseDataCurrent(self):
+        """Test PublicPriceCurrentResponseDataCurrent"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.public_current_response_data.PublicCurrentResponseData()  # noqa: E501
+        # model = swagger_client.models.public_price_current_response_data_current.PublicPriceCurrentResponseDataCurrent()  # noqa: E501
         pass
 
 

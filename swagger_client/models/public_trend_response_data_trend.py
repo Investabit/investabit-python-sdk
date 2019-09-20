@@ -31,6 +31,8 @@ class PublicTrendResponseDataTrend(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'time_start': 'float',
+        'time_end': 'float',
         'interval': 'str',
         'weighted_price': 'float',
         'change_usd': 'float',
@@ -39,6 +41,8 @@ class PublicTrendResponseDataTrend(object):
     }
 
     attribute_map = {
+        'time_start': 'time_start',
+        'time_end': 'time_end',
         'interval': 'interval',
         'weighted_price': 'weighted_price',
         'change_usd': 'change_usd',
@@ -46,9 +50,11 @@ class PublicTrendResponseDataTrend(object):
         'confidence': 'confidence'
     }
 
-    def __init__(self, interval=None, weighted_price=None, change_usd=None, change_pct=None, confidence=None):  # noqa: E501
+    def __init__(self, time_start=None, time_end=None, interval=None, weighted_price=None, change_usd=None, change_pct=None, confidence=None):  # noqa: E501
         """PublicTrendResponseDataTrend - a model defined in Swagger"""  # noqa: E501
 
+        self._time_start = None
+        self._time_end = None
         self._interval = None
         self._weighted_price = None
         self._change_usd = None
@@ -56,11 +62,59 @@ class PublicTrendResponseDataTrend(object):
         self._confidence = None
         self.discriminator = None
 
+        self.time_start = time_start
+        self.time_end = time_end
         self.interval = interval
         self.weighted_price = weighted_price
         self.change_usd = change_usd
         self.change_pct = change_pct
         self.confidence = confidence
+
+    @property
+    def time_start(self):
+        """Gets the time_start of this PublicTrendResponseDataTrend.  # noqa: E501
+
+
+        :return: The time_start of this PublicTrendResponseDataTrend.  # noqa: E501
+        :rtype: float
+        """
+        return self._time_start
+
+    @time_start.setter
+    def time_start(self, time_start):
+        """Sets the time_start of this PublicTrendResponseDataTrend.
+
+
+        :param time_start: The time_start of this PublicTrendResponseDataTrend.  # noqa: E501
+        :type: float
+        """
+        if time_start is None:
+            raise ValueError("Invalid value for `time_start`, must not be `None`")  # noqa: E501
+
+        self._time_start = time_start
+
+    @property
+    def time_end(self):
+        """Gets the time_end of this PublicTrendResponseDataTrend.  # noqa: E501
+
+
+        :return: The time_end of this PublicTrendResponseDataTrend.  # noqa: E501
+        :rtype: float
+        """
+        return self._time_end
+
+    @time_end.setter
+    def time_end(self, time_end):
+        """Sets the time_end of this PublicTrendResponseDataTrend.
+
+
+        :param time_end: The time_end of this PublicTrendResponseDataTrend.  # noqa: E501
+        :type: float
+        """
+        if time_end is None:
+            raise ValueError("Invalid value for `time_end`, must not be `None`")  # noqa: E501
+
+        self._time_end = time_end
 
     @property
     def interval(self):

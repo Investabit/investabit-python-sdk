@@ -29,17 +29,17 @@ class TestPublicApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_v1_public_current_symbol_get(self):
-        """Test case for v1_public_current_symbol_get
-
-        Current  # noqa: E501
-        """
-        pass
-
     def test_v1_public_price_change_symbol_get(self):
         """Test case for v1_public_price_change_symbol_get
 
         Price Change  # noqa: E501
+        """
+        pass
+
+    def test_v1_public_price_current_symbol_get(self):
+        """Test case for v1_public_price_current_symbol_get
+
+        Price Current  # noqa: E501
         """
         pass
 

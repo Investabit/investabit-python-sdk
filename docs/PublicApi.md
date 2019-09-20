@@ -4,60 +4,12 @@ All URIs are relative to *https://api.investabit.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**v1_public_current_symbol_get**](PublicApi.md#v1_public_current_symbol_get) | **GET** /v1/public/current/{symbol} | Current
 [**v1_public_price_change_symbol_get**](PublicApi.md#v1_public_price_change_symbol_get) | **GET** /v1/public/price-change/{symbol} | Price Change
+[**v1_public_price_current_symbol_get**](PublicApi.md#v1_public_price_current_symbol_get) | **GET** /v1/public/price-current/{symbol} | Price Current
 [**v1_public_price_history_symbol_period_interval_get**](PublicApi.md#v1_public_price_history_symbol_period_interval_get) | **GET** /v1/public/price-history/{symbol}/{period}/{interval} | Price History
 [**v1_public_symbols_get**](PublicApi.md#v1_public_symbols_get) | **GET** /v1/public/symbols | Symbols
 [**v1_public_trend_symbol_get**](PublicApi.md#v1_public_trend_symbol_get) | **GET** /v1/public/trend/{symbol} | Trend
 
-
-# **v1_public_current_symbol_get**
-> PublicCurrentResponse v1_public_current_symbol_get(symbol)
-
-Current
-
-
-
-### Example
-```python
-from __future__ import print_function
-import time
-import swagger_client
-from swagger_client.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = swagger_client.PublicApi()
-symbol = '\"btc\"' # str | The cryptocurrency symbol, provide `all` to get every symbol.
-
-try:
-    # Current
-    api_response = api_instance.v1_public_current_symbol_get(symbol)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling PublicApi->v1_public_current_symbol_get: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **symbol** | **str**| The cryptocurrency symbol, provide &#x60;all&#x60; to get every symbol. | 
-
-### Return type
-
-[**PublicCurrentResponse**](PublicCurrentResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **v1_public_price_change_symbol_get**
 > PublicPriceChangeResponse v1_public_price_change_symbol_get(symbol)
@@ -76,7 +28,7 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.PublicApi()
-symbol = '\"btc\"' # str | The cryptocurrency symbol.
+symbol = 'btc' # str | The cryptocurrency symbol.
 
 try:
     # Price Change
@@ -107,6 +59,54 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **v1_public_price_current_symbol_get**
+> PublicPriceCurrentResponse v1_public_price_current_symbol_get(symbol)
+
+Price Current
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.PublicApi()
+symbol = 'btc' # str | The cryptocurrency symbol, provide `all` to get every symbol.
+
+try:
+    # Price Current
+    api_response = api_instance.v1_public_price_current_symbol_get(symbol)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PublicApi->v1_public_price_current_symbol_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **symbol** | **str**| The cryptocurrency symbol, provide &#x60;all&#x60; to get every symbol. | 
+
+### Return type
+
+[**PublicPriceCurrentResponse**](PublicPriceCurrentResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **v1_public_price_history_symbol_period_interval_get**
 > PublicPriceHistoryResponse v1_public_price_history_symbol_period_interval_get(symbol, period, interval)
 
@@ -124,9 +124,9 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.PublicApi()
-symbol = '\"btc\"' # str | The cryptocurrency symbol, provide `all` to get every symbol.
-period = '\"30d\"' # str | The period to get data for, such as past 30 days.
-interval = '\"1d\"' # str | The bar interval, such as 1 day.
+symbol = 'btc' # str | The cryptocurrency symbol, provide `all` to get every symbol.
+period = '30d' # str | The period to get data for, such as past 30 days.
+interval = '1d' # str | The bar interval, such as 1 day.
 
 try:
     # Price History
@@ -220,7 +220,7 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.PublicApi()
-symbol = '\"btc\"' # str | The cryptocurrency symbol.
+symbol = 'btc' # str | The cryptocurrency symbol.
 
 try:
     # Trend

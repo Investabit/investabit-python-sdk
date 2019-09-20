@@ -53,14 +53,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.PublicApi(swagger_client.ApiClient(configuration))
-symbol = '\"btc\"' # str | The cryptocurrency symbol, provide `all` to get every symbol.
+symbol = 'btc' # str | The cryptocurrency symbol.
 
 try:
-    # Current
-    api_response = api_instance.v1_public_current_symbol_get(symbol)
+    # Price Change
+    api_response = api_instance.v1_public_price_change_symbol_get(symbol)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling PublicApi->v1_public_current_symbol_get: %s\n" % e)
+    print("Exception when calling PublicApi->v1_public_price_change_symbol_get: %s\n" % e)
 
 ```
 
@@ -70,8 +70,8 @@ All URIs are relative to *https://api.investabit.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*PublicApi* | [**v1_public_current_symbol_get**](docs/PublicApi.md#v1_public_current_symbol_get) | **GET** /v1/public/current/{symbol} | Current
 *PublicApi* | [**v1_public_price_change_symbol_get**](docs/PublicApi.md#v1_public_price_change_symbol_get) | **GET** /v1/public/price-change/{symbol} | Price Change
+*PublicApi* | [**v1_public_price_current_symbol_get**](docs/PublicApi.md#v1_public_price_current_symbol_get) | **GET** /v1/public/price-current/{symbol} | Price Current
 *PublicApi* | [**v1_public_price_history_symbol_period_interval_get**](docs/PublicApi.md#v1_public_price_history_symbol_period_interval_get) | **GET** /v1/public/price-history/{symbol}/{period}/{interval} | Price History
 *PublicApi* | [**v1_public_symbols_get**](docs/PublicApi.md#v1_public_symbols_get) | **GET** /v1/public/symbols | Symbols
 *PublicApi* | [**v1_public_trend_symbol_get**](docs/PublicApi.md#v1_public_trend_symbol_get) | **GET** /v1/public/trend/{symbol} | Trend
@@ -79,16 +79,16 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
- - [CurrentRoute](docs/CurrentRoute.md)
  - [DefaultResponse](docs/DefaultResponse.md)
  - [PriceChangeRoute](docs/PriceChangeRoute.md)
+ - [PriceCurrentRoute](docs/PriceCurrentRoute.md)
  - [PriceHistoryRoute](docs/PriceHistoryRoute.md)
- - [PublicCurrentResponse](docs/PublicCurrentResponse.md)
- - [PublicCurrentResponseData](docs/PublicCurrentResponseData.md)
- - [PublicCurrentResponseDataCurrent](docs/PublicCurrentResponseDataCurrent.md)
  - [PublicPriceChangeResponse](docs/PublicPriceChangeResponse.md)
  - [PublicPriceChangeResponseData](docs/PublicPriceChangeResponseData.md)
  - [PublicPriceChangeResponseDataPriceChange](docs/PublicPriceChangeResponseDataPriceChange.md)
+ - [PublicPriceCurrentResponse](docs/PublicPriceCurrentResponse.md)
+ - [PublicPriceCurrentResponseData](docs/PublicPriceCurrentResponseData.md)
+ - [PublicPriceCurrentResponseDataCurrent](docs/PublicPriceCurrentResponseDataCurrent.md)
  - [PublicPriceHistoryResponse](docs/PublicPriceHistoryResponse.md)
  - [PublicPriceHistoryResponseData](docs/PublicPriceHistoryResponseData.md)
  - [PublicPriceHistoryResponseDataHistory](docs/PublicPriceHistoryResponseDataHistory.md)
