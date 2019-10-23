@@ -35,5 +35,7 @@ from swagger_client.models.public_symbols_response_data_symbols import PublicSym
 from swagger_client.models.public_trend_response import PublicTrendResponse
 from swagger_client.models.public_trend_response_data import PublicTrendResponseData
 from swagger_client.models.public_trend_response_data_trend import PublicTrendResponseDataTrend
+from swagger_client.models.public_waiting_list_request import PublicWaitingListRequest
 from swagger_client.models.symbols_route import SymbolsRoute
 from swagger_client.models.trend_route import TrendRoute
+from swagger_client.models.waiting_list_route import WaitingListRoute

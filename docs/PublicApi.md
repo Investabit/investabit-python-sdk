@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**v1_public_price_history_symbol_period_interval_get**](PublicApi.md#v1_public_price_history_symbol_period_interval_get) | **GET** /v1/public/price-history/{symbol}/{period}/{interval} | Price History
 [**v1_public_symbols_get**](PublicApi.md#v1_public_symbols_get) | **GET** /v1/public/symbols | Symbols
 [**v1_public_trend_symbol_get**](PublicApi.md#v1_public_trend_symbol_get) | **GET** /v1/public/trend/{symbol} | Trend
+[**v1_public_waiting_list_post**](PublicApi.md#v1_public_waiting_list_post) | **POST** /v1/public/waiting-list | Waiting List
 
 
 # **v1_public_price_change_symbol_get**
@@ -239,6 +240,54 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**PublicTrendResponse**](PublicTrendResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **v1_public_waiting_list_post**
+> DefaultResponse v1_public_waiting_list_post(body=body)
+
+Waiting List
+
+Subscribe a user to the waiting list, `name` is not required.
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.PublicApi()
+body = swagger_client.PublicWaitingListRequest() # PublicWaitingListRequest |  (optional)
+
+try:
+    # Waiting List
+    api_response = api_instance.v1_public_waiting_list_post(body=body)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PublicApi->v1_public_waiting_list_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**PublicWaitingListRequest**](PublicWaitingListRequest.md)|  | [optional] 
+
+### Return type
+
+[**DefaultResponse**](DefaultResponse.md)
 
 ### Authorization
 
