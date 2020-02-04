@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**v1_public_price_change_symbol_get**](PublicApi.md#v1_public_price_change_symbol_get) | **GET** /v1/public/price-change/{symbol} | Price Change
 [**v1_public_price_current_symbol_get**](PublicApi.md#v1_public_price_current_symbol_get) | **GET** /v1/public/price-current/{symbol} | Price Current
 [**v1_public_price_history_symbol_period_interval_get**](PublicApi.md#v1_public_price_history_symbol_period_interval_get) | **GET** /v1/public/price-history/{symbol}/{period}/{interval} | Price History
+[**v1_public_summary_get**](PublicApi.md#v1_public_summary_get) | **GET** /v1/public/summary | Summary
 [**v1_public_symbols_get**](PublicApi.md#v1_public_symbols_get) | **GET** /v1/public/symbols | Symbols
 [**v1_public_trend_symbol_get**](PublicApi.md#v1_public_trend_symbol_get) | **GET** /v1/public/trend/{symbol} | Trend
 
@@ -147,6 +148,50 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**PublicPriceHistoryResponse**](PublicPriceHistoryResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **v1_public_summary_get**
+> PublicSummaryResponse v1_public_summary_get()
+
+Summary
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.PublicApi()
+
+try:
+    # Summary
+    api_response = api_instance.v1_public_summary_get()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PublicApi->v1_public_summary_get: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**PublicSummaryResponse**](PublicSummaryResponse.md)
 
 ### Authorization
 

@@ -16,59 +16,23 @@ from __future__ import absolute_import
 import unittest
 
 import swagger_client
-from swagger_client.api.public_api import PublicApi  # noqa: E501
+from swagger_client.models.summary_route import SummaryRoute  # noqa: E501
 from swagger_client.rest import ApiException
 
 
-class TestPublicApi(unittest.TestCase):
-    """PublicApi unit test stubs"""
+class TestSummaryRoute(unittest.TestCase):
+    """SummaryRoute unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.public_api.PublicApi()  # noqa: E501
+        pass
 
     def tearDown(self):
         pass
 
-    def test_v1_public_price_change_symbol_get(self):
-        """Test case for v1_public_price_change_symbol_get
-
-        Price Change  # noqa: E501
-        """
-        pass
-
-    def test_v1_public_price_current_symbol_get(self):
-        """Test case for v1_public_price_current_symbol_get
-
-        Price Current  # noqa: E501
-        """
-        pass
-
-    def test_v1_public_price_history_symbol_period_interval_get(self):
-        """Test case for v1_public_price_history_symbol_period_interval_get
-
-        Price History  # noqa: E501
-        """
-        pass
-
-    def test_v1_public_summary_get(self):
-        """Test case for v1_public_summary_get
-
-        Summary  # noqa: E501
-        """
-        pass
-
-    def test_v1_public_symbols_get(self):
-        """Test case for v1_public_symbols_get
-
-        Symbols  # noqa: E501
-        """
-        pass
-
-    def test_v1_public_trend_symbol_get(self):
-        """Test case for v1_public_trend_symbol_get
-
-        Trend  # noqa: E501
-        """
+    def testSummaryRoute(self):
+        """Test SummaryRoute"""
+        # FIXME: construct object with mandatory attributes with example values
+        # model = swagger_client.models.summary_route.SummaryRoute()  # noqa: E501
         pass
 
 

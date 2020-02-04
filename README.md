@@ -85,6 +85,7 @@ Class | Method | HTTP request | Description
 *PublicApi* | [**v1_public_price_change_symbol_get**](docs/PublicApi.md#v1_public_price_change_symbol_get) | **GET** /v1/public/price-change/{symbol} | Price Change
 *PublicApi* | [**v1_public_price_current_symbol_get**](docs/PublicApi.md#v1_public_price_current_symbol_get) | **GET** /v1/public/price-current/{symbol} | Price Current
 *PublicApi* | [**v1_public_price_history_symbol_period_interval_get**](docs/PublicApi.md#v1_public_price_history_symbol_period_interval_get) | **GET** /v1/public/price-history/{symbol}/{period}/{interval} | Price History
+*PublicApi* | [**v1_public_summary_get**](docs/PublicApi.md#v1_public_summary_get) | **GET** /v1/public/summary | Summary
 *PublicApi* | [**v1_public_symbols_get**](docs/PublicApi.md#v1_public_symbols_get) | **GET** /v1/public/symbols | Symbols
 *PublicApi* | [**v1_public_trend_symbol_get**](docs/PublicApi.md#v1_public_trend_symbol_get) | **GET** /v1/public/trend/{symbol} | Trend
 
@@ -115,12 +116,16 @@ Class | Method | HTTP request | Description
  - [PublicPriceHistoryResponseData](docs/PublicPriceHistoryResponseData.md)
  - [PublicPriceHistoryResponseDataHistory](docs/PublicPriceHistoryResponseDataHistory.md)
  - [PublicPriceHistoryResponseDataPriceHistory](docs/PublicPriceHistoryResponseDataPriceHistory.md)
+ - [PublicSummaryResponse](docs/PublicSummaryResponse.md)
+ - [PublicSummaryResponseColor](docs/PublicSummaryResponseColor.md)
+ - [PublicSummaryResponseData](docs/PublicSummaryResponseData.md)
  - [PublicSymbolsResponse](docs/PublicSymbolsResponse.md)
  - [PublicSymbolsResponseData](docs/PublicSymbolsResponseData.md)
  - [PublicSymbolsResponseDataSymbols](docs/PublicSymbolsResponseDataSymbols.md)
  - [PublicTrendResponse](docs/PublicTrendResponse.md)
  - [PublicTrendResponseData](docs/PublicTrendResponseData.md)
  - [PublicTrendResponseDataTrend](docs/PublicTrendResponseDataTrend.md)
+ - [SummaryRoute](docs/SummaryRoute.md)
  - [SymbolsRoute](docs/SymbolsRoute.md)
  - [TrendRoute](docs/TrendRoute.md)
  - [TrendTabluarRoute](docs/TrendTabluarRoute.md)
