@@ -16,52 +16,23 @@ from __future__ import absolute_import
 import unittest
 
 import swagger_client
-from swagger_client.api.private_api import PrivateApi  # noqa: E501
+from swagger_client.models.private_forecast_time_response_data import PrivateForecastTimeResponseData  # noqa: E501
 from swagger_client.rest import ApiException
 
 
-class TestPrivateApi(unittest.TestCase):
-    """PrivateApi unit test stubs"""
+class TestPrivateForecastTimeResponseData(unittest.TestCase):
+    """PrivateForecastTimeResponseData unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.private_api.PrivateApi()  # noqa: E501
+        pass
 
     def tearDown(self):
         pass
 
-    def test_v1_private_accuracy_symbol_interval_period_get(self):
-        """Test case for v1_private_accuracy_symbol_interval_period_get
-
-        Accuracy  # noqa: E501
-        """
-        pass
-
-    def test_v1_private_forecast_symbol_interval_get(self):
-        """Test case for v1_private_forecast_symbol_interval_get
-
-        Forecast  # noqa: E501
-        """
-        pass
-
-    def test_v1_private_forecast_time_symbol_interval_period_get(self):
-        """Test case for v1_private_forecast_time_symbol_interval_period_get
-
-        Forecast Time  # noqa: E501
-        """
-        pass
-
-    def test_v1_private_trend_symbol_get(self):
-        """Test case for v1_private_trend_symbol_get
-
-        Trend  # noqa: E501
-        """
-        pass
-
-    def test_v1_private_trend_tabular_get(self):
-        """Test case for v1_private_trend_tabular_get
-
-        Trend Tabular  # noqa: E501
-        """
+    def testPrivateForecastTimeResponseData(self):
+        """Test PrivateForecastTimeResponseData"""
+        # FIXME: construct object with mandatory attributes with example values
+        # model = swagger_client.models.private_forecast_time_response_data.PrivateForecastTimeResponseData()  # noqa: E501
         pass
 
 
