@@ -79,6 +79,7 @@ All URIs are relative to *https://api.cryptoweather.ai*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *PrivateApi* | [**v1_private_accuracy_symbol_interval_period_get**](docs/PrivateApi.md#v1_private_accuracy_symbol_interval_period_get) | **GET** /v1/private/accuracy/{symbol}/{interval}/{period} | Accuracy
+*PrivateApi* | [**v1_private_forecast_accuracy_symbol_interval_period_get**](docs/PrivateApi.md#v1_private_forecast_accuracy_symbol_interval_period_get) | **GET** /v1/private/forecast-accuracy/{symbol}/{interval}/{period} | Forecast Accuracy
 *PrivateApi* | [**v1_private_forecast_symbol_interval_get**](docs/PrivateApi.md#v1_private_forecast_symbol_interval_get) | **GET** /v1/private/forecast/{symbol}/{interval} | Forecast
 *PrivateApi* | [**v1_private_forecast_time_symbol_interval_period_get**](docs/PrivateApi.md#v1_private_forecast_time_symbol_interval_period_get) | **GET** /v1/private/forecast-time/{symbol}/{interval}/{period} | Forecast Time
 *PrivateApi* | [**v1_private_trend_symbol_get**](docs/PrivateApi.md#v1_private_trend_symbol_get) | **GET** /v1/private/trend/{symbol} | Trend
@@ -95,6 +96,7 @@ Class | Method | HTTP request | Description
 
  - [AccuracyRoute](docs/AccuracyRoute.md)
  - [DefaultResponse](docs/DefaultResponse.md)
+ - [ForecastAccuracyRoute](docs/ForecastAccuracyRoute.md)
  - [ForecastRoute](docs/ForecastRoute.md)
  - [ForecastTimeRoute](docs/ForecastTimeRoute.md)
  - [PriceChangeRoute](docs/PriceChangeRoute.md)
@@ -102,6 +104,8 @@ Class | Method | HTTP request | Description
  - [PriceHistoryRoute](docs/PriceHistoryRoute.md)
  - [PrivateAccuracyResponse](docs/PrivateAccuracyResponse.md)
  - [PrivateAccuracyResponseData](docs/PrivateAccuracyResponseData.md)
+ - [PrivateForecastAccuracyResponse](docs/PrivateForecastAccuracyResponse.md)
+ - [PrivateForecastAccuracyResponseData](docs/PrivateForecastAccuracyResponseData.md)
  - [PrivateForecastResponse](docs/PrivateForecastResponse.md)
  - [PrivateForecastResponseData](docs/PrivateForecastResponseData.md)
  - [PrivateForecastResponseDataForecast](docs/PrivateForecastResponseDataForecast.md)

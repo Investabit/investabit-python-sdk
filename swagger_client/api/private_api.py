@@ -152,6 +152,125 @@ class PrivateApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def v1_private_forecast_accuracy_symbol_interval_period_get(self, symbol, interval, period, **kwargs):  # noqa: E501
+        """Forecast Accuracy  # noqa: E501
+
+          # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_private_forecast_accuracy_symbol_interval_period_get(symbol, interval, period, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str symbol: The cryptocurrency symbol. (required)
+        :param str interval: The forecast interval, 1h or 1d. (required)
+        :param str period: The period for computing the error bounds, typically 7d or 30d. (required)
+        :param str cookie: e.g. csrf=b1820141-1bad-4a9c-93c0-52022817ce89
+        :param str x_csrf: e.g. b1820141-1bad-4a9c-93c0-52022817ce89
+        :return: PrivateForecastAccuracyResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v1_private_forecast_accuracy_symbol_interval_period_get_with_http_info(symbol, interval, period, **kwargs)  # noqa: E501
+        else:
+            (data) = self.v1_private_forecast_accuracy_symbol_interval_period_get_with_http_info(symbol, interval, period, **kwargs)  # noqa: E501
+            return data
+
+    def v1_private_forecast_accuracy_symbol_interval_period_get_with_http_info(self, symbol, interval, period, **kwargs):  # noqa: E501
+        """Forecast Accuracy  # noqa: E501
+
+          # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_private_forecast_accuracy_symbol_interval_period_get_with_http_info(symbol, interval, period, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str symbol: The cryptocurrency symbol. (required)
+        :param str interval: The forecast interval, 1h or 1d. (required)
+        :param str period: The period for computing the error bounds, typically 7d or 30d. (required)
+        :param str cookie: e.g. csrf=b1820141-1bad-4a9c-93c0-52022817ce89
+        :param str x_csrf: e.g. b1820141-1bad-4a9c-93c0-52022817ce89
+        :return: PrivateForecastAccuracyResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['symbol', 'interval', 'period', 'cookie', 'x_csrf']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v1_private_forecast_accuracy_symbol_interval_period_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'symbol' is set
+        if ('symbol' not in params or
+                params['symbol'] is None):
+            raise ValueError("Missing the required parameter `symbol` when calling `v1_private_forecast_accuracy_symbol_interval_period_get`")  # noqa: E501
+        # verify the required parameter 'interval' is set
+        if ('interval' not in params or
+                params['interval'] is None):
+            raise ValueError("Missing the required parameter `interval` when calling `v1_private_forecast_accuracy_symbol_interval_period_get`")  # noqa: E501
+        # verify the required parameter 'period' is set
+        if ('period' not in params or
+                params['period'] is None):
+            raise ValueError("Missing the required parameter `period` when calling `v1_private_forecast_accuracy_symbol_interval_period_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'symbol' in params:
+            path_params['symbol'] = params['symbol']  # noqa: E501
+        if 'interval' in params:
+            path_params['interval'] = params['interval']  # noqa: E501
+        if 'period' in params:
+            path_params['period'] = params['period']  # noqa: E501
+
+        query_params = []
+
+        header_params = {}
+        if 'cookie' in params:
+            header_params['Cookie'] = params['cookie']  # noqa: E501
+        if 'x_csrf' in params:
+            header_params['X-csrf'] = params['x_csrf']  # noqa: E501
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['oauth2']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v1/private/forecast-accuracy/{symbol}/{interval}/{period}', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='PrivateForecastAccuracyResponse',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def v1_private_forecast_symbol_interval_get(self, symbol, interval, **kwargs):  # noqa: E501
         """Forecast  # noqa: E501
 

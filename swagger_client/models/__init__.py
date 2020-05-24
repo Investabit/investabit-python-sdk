@@ -17,6 +17,7 @@ from __future__ import absolute_import
 # import models into model package
 from swagger_client.models.accuracy_route import AccuracyRoute
 from swagger_client.models.default_response import DefaultResponse
+from swagger_client.models.forecast_accuracy_route import ForecastAccuracyRoute
 from swagger_client.models.forecast_route import ForecastRoute
 from swagger_client.models.forecast_time_route import ForecastTimeRoute
 from swagger_client.models.price_change_route import PriceChangeRoute
@@ -24,6 +25,8 @@ from swagger_client.models.price_current_route import PriceCurrentRoute
 from swagger_client.models.price_history_route import PriceHistoryRoute
 from swagger_client.models.private_accuracy_response import PrivateAccuracyResponse
 from swagger_client.models.private_accuracy_response_data import PrivateAccuracyResponseData
+from swagger_client.models.private_forecast_accuracy_response import PrivateForecastAccuracyResponse
+from swagger_client.models.private_forecast_accuracy_response_data import PrivateForecastAccuracyResponseData
 from swagger_client.models.private_forecast_response import PrivateForecastResponse
 from swagger_client.models.private_forecast_response_data import PrivateForecastResponseData
 from swagger_client.models.private_forecast_response_data_forecast import PrivateForecastResponseDataForecast
